@@ -1,10 +1,19 @@
 package pucrs.qp.triangle;
 
 /**
- * Hello world!
- *
+ * 
+ * @author marco.mangan@pucrs.br
+ * 
  */
 public class App {
+
+	/**
+	 * 
+	 * @param a
+	 * @param b
+	 * @param c
+	 * @return
+	 */
 	public static int identificaTriangulo(int a, int b, int c) {
 		if ((a < b + c) && (b < a + c) && (c < b + a)) {
 			if ((a == b) && (b == c))
@@ -17,7 +26,20 @@ public class App {
 		return tipos.INVALIDO.value();
 	}
 
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
+		System.out.println("Triângulos!");
+		System.out.println(identificaTriangulo(2, 3, 4));
 	}
 }
+
+
+
+
+
+
+
+
